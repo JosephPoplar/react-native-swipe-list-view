@@ -8,9 +8,12 @@ import {
 	FlatList,
 	ListView,
 	Text,
-	ViewPropTypes,
+	ViewPropTypes as RNViewPropTypes,
 	View,
 } from 'react-native';
+
+
+const ViewPropTypes = RNViewPropTypes || View.propTypes;
 
 import SwipeRow from './SwipeRow';
 

@@ -10,9 +10,12 @@ import {
 	Platform,
 	StyleSheet,
 	TouchableOpacity,
-	ViewPropTypes,
+	ViewPropTypes as RNViewPropTypes,
 	View
 } from 'react-native';
+
+const ViewPropTypes = RNViewPropTypes || View.propTypes;
+
 
 const PREVIEW_OPEN_DELAY = 700;
 const PREVIEW_CLOSE_DELAY = 300;
